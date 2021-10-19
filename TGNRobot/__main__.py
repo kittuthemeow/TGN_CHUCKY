@@ -85,7 +85,7 @@ buttons = [
             text="ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/Chuckymusic_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ꜱᴏᴜʀᴄᴇ 💫", url=f"https://github.com/Itsunknown-12/TGN-Robot"),
+        
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
         ),

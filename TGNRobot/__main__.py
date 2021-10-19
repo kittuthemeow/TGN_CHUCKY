@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴏɪ, ɪ ᴍ ᴛɢɴ ʀᴏʙᴏᴛ
+ʜᴏɪ, ɪ ᴍ 🇨ԋυƈƙყ 🇲☋ⓢ☿☾
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
  [❤](https://telegra.ph/file/4f365a23c2ef0a941254e.jpg),
 """
@@ -93,7 +93,7 @@ buttons = [
     [
         InlineKeyboardButton(text="✴️ᴜᴘᴅᴀᴛᴇꜱ ✴️", url=f"https://t.me/chuckmusicupdate"),
         InlineKeyboardButton(
-            text="🔱ᴛɢɴ ᴄʜᴀᴛ🔱", url=f"https://t.me/chuckmusic"
+            text="🔱ᴛ𝒂𝒎𝒊𝒍 ᴄʜᴀᴛ🔱", url=f"https://t.me/tamilchatkings"
         ),
     ],
     [

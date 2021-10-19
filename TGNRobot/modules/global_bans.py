@@ -140,7 +140,7 @@ def gban(update: Update, context: CallbackContext):
 
         if not reason:
             message.reply_text(
-                "Evana nan already gbanned gban potan 👿😈; I'd change the reason, but you haven't given me one..."
+                "𝒆𝒗𝒂𝒏𝒂 𝒏𝒂𝒏 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒈𝒃𝒂𝒏 𝒑𝒂𝒏𝒊𝒕𝒂𝒏 𝒑𝒂 𝒃𝒐𝒐𝒓 𝒂𝒅𝒊𝒌𝒖𝒕𝒉𝒖 𝒏𝒆𝒘 𝒊𝒅 𝒕𝒉𝒂𝒏𝒈𝒂👿😈; I'd change the reason, but you haven't given me one..."
             )
             return
 
@@ -149,7 +149,7 @@ def gban(update: Update, context: CallbackContext):
         )
         if old_reason:
             message.reply_text(
-                "Evana nan already gbanned gban potan 👿😈, for the following reason:\n"
+                "𝒆𝒗𝒂𝒏𝒂 𝒏𝒂𝒏 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒈𝒃𝒂𝒏 𝒑𝒂𝒏𝒊𝒕𝒂𝒏 𝒑𝒂 𝒃𝒐𝒐𝒓 𝒂𝒅𝒊𝒌𝒖𝒕𝒉𝒖 𝒏𝒆𝒘 𝒊𝒅 𝒕𝒉𝒂𝒏𝒈𝒂👿😈, for the following reason:\n"
                 "<code>{}</code>\n"
                 "I've gone and updated it with your new reason!".format(
                     html.escape(old_reason)
@@ -159,7 +159,7 @@ def gban(update: Update, context: CallbackContext):
 
         else:
             message.reply_text(
-                "Evana nan already gbanned gban potan 👿😈, but had no reason set; I've gone and updated it!"
+                "𝒆𝒗𝒂𝒏𝒂 𝒏𝒂𝒏 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒈𝒃𝒂𝒏 𝒑𝒂𝒏𝒊𝒕𝒂𝒏 𝒑𝒂 𝒃𝒐𝒐𝒓 𝒂𝒅𝒊𝒌𝒖𝒕𝒉𝒖 𝒏𝒆𝒘 𝒊𝒅 𝒕𝒉𝒂𝒏𝒈𝒂👿😈, but had no reason set; I've gone and updated it!"
             )
 
         return
@@ -257,9 +257,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("paiyan pavom gban agi sethutan.", parse_mode=ParseMode.HTML)
+        message.reply_text("𝐩𝐚𝐯𝐨𝐦 𝐩𝐚𝐢𝐲𝐚𝐧 𝐠𝐛𝐚𝐧 𝐚𝐠𝐢 𝐬𝐞𝐭𝐡𝐮𝐭𝐚𝐧😂😂.", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("paiyan pavom gban agi sethutan.", parse_mode=ParseMode.HTML)
+        message.reply_text("𝐩𝐚𝐯𝐨𝐦 𝐩𝐚𝐢𝐲𝐚𝐧 𝐠𝐛𝐚𝐧 𝐚𝐠𝐢 𝐬𝐞𝐭𝐡𝐮𝐭𝐚𝐧😂😂.", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(

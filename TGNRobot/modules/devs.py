@@ -3,7 +3,7 @@ __mod_name__ = "Dev"
 __help__ = """
 *Commands*
 
-「 HELP FOR DEVS 」
+=>> *「 HELP FOR DEVS 」
 
 ⚠️ Notice:
 Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.

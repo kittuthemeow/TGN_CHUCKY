@@ -82,22 +82,22 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/Chuckymusic_bot?startgroup=true"),
+            text="🤖ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/Chuckymusic_bot?startgroup=true"),
     ],
     [
         
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="⚜️ꜱᴜᴘᴘᴏʀᴛ ⚜️", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ☑️", url=f"https://t.me/chuckmusicupdate"),
+        InlineKeyboardButton(text="✴️ᴜᴘᴅᴀᴛᴇꜱ ✴️", url=f"https://t.me/chuckmusicupdate"),
         InlineKeyboardButton(
-            text="ᴛɢɴ ᴄʜᴀᴛ", url=f"https://t.me/chuckmusic"
+            text="🔱ᴛɢɴ ᴄʜᴀᴛ🔱", url=f"https://t.me/chuckmusic"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
+        InlineKeyboardButton(text="☣️ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ☣️", callback_data="help_back"),
     ],
 ]
 

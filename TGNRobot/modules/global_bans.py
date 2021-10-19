@@ -140,7 +140,7 @@ def gban(update: Update, context: CallbackContext):
 
         if not reason:
             message.reply_text(
-                "This user is already gbanned; I'd change the reason, but you haven't given me one..."
+                "Evana nan already gbanned gban potan 👿😈; I'd change the reason, but you haven't given me one..."
             )
             return
 
@@ -149,7 +149,7 @@ def gban(update: Update, context: CallbackContext):
         )
         if old_reason:
             message.reply_text(
-                "This user is already gbanned, for the following reason:\n"
+                "Evana nan already gbanned gban potan 👿😈, for the following reason:\n"
                 "<code>{}</code>\n"
                 "I've gone and updated it with your new reason!".format(
                     html.escape(old_reason)
@@ -159,7 +159,7 @@ def gban(update: Update, context: CallbackContext):
 
         else:
             message.reply_text(
-                "This user is already gbanned, but had no reason set; I've gone and updated it!"
+                "Evana nan already gbanned gban potan 👿😈, but had no reason set; I've gone and updated it!"
             )
 
         return
@@ -257,9 +257,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("paiyan pavom gban agi sethutan.", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("paiyan pavom gban agi sethutan.", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(
@@ -382,9 +382,9 @@ def ungban(update: Update, context: CallbackContext):
 
     if ungban_time > 60:
         ungban_time = round((ungban_time / 60), 2)
-        message.reply_text(f"Person has been un-gbanned. Took {ungban_time} min")
+        message.reply_text(f"ena ma neanga epdi un-gban panitengal ma. Took {ungban_time} min")
     else:
-        message.reply_text(f"Person has been un-gbanned. Took {ungban_time} sec")
+        message.reply_text(f"ena ma neanga epdi un-gban panitengal ma. Took {ungban_time} sec")
 
 
 @run_async

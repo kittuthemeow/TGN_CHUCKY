@@ -91,4 +91,4 @@ __help__ = """
  ❍ /logo text :  Create your logo with your name
 
  """
-__mod_name__ = "Logo"
+__mod_name__ = "⚕️Logo⚕️"

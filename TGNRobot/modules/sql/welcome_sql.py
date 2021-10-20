@@ -6,7 +6,7 @@ from TGNRobot.modules.helper_funcs.msg_types import Types
 from TGNRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
- DEFAULT_WELCOME = 'ஏய் {first}, நீங்கள் எப்படி இருக்கிறீர்கள்?'
+DEFAULT_WELCOME = 'ஏய் {first}, நீங்கள் எப்படி இருக்கிறீர்கள்?'
 DEFAULT_GOODBYE = 'பேச தெரிஞ்சா பேசு தேவையில்லாம பேசி அடிவாங்கி சாகதா 🤬!'
 
 DEFAULT_WELCOME_MESSAGES = [

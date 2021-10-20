@@ -95,6 +95,6 @@ TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 
 dispatcher.add_handler(TIME_HANDLER)
 
-__mod_name__ = "TIME"
+__mod_name__ = "🕰️TIME🕰️"
 __command_list__ = ["time"]
 __handlers__ = [TIME_HANDLER]

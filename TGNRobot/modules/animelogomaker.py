@@ -310,4 +310,4 @@ async def lego(event):
     if os.path.exists(fname):
             os.remove(fname)
  except Exception as e:
-    await event.reply('Error, Report @Chu, {e}')
+    await event.reply('Error, Report @Chuc, {e}')

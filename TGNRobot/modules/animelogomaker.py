@@ -33,7 +33,7 @@ from requests import get
 from telethon.tl.types import InputMessagesFilterPhotos
 
 from TGNRobot import OWNER_ID, BOT_USERNAME, SUPPORT_CHAT
-from ValtAoiTheBot.events import register
+from TGNRobot.events import register
 from TGNRobot import telethn
 from PIL import Image, ImageDraw, ImageFont
 

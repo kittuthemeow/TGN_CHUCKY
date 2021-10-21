@@ -10,7 +10,7 @@ REPO_TEXT = "**A Powerful [BOT](https://telegra.ph/file/cab6825dea9263d347831.jp
 BUTTONS = InlineKeyboardMarkup(
       [[
         InlineKeyboardButton("⚡Owner 🔥", url="t.me/Kittu_the_criminal"),
-        InlineKeyboardButton(" ᴊᴏɪɴ 💫", url="https://t.me/Thanimaibot"),
+        InlineKeyboardButton(" Valt Aoi 💫", url="https://t.me/Thanimaibot"),
       ],[
         InlineKeyboardButton("Friend ❣️", url="https://t.me/VALTAOITHEBOT"),
         InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/chuckmusic"),

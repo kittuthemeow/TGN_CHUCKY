@@ -16,7 +16,7 @@ BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/chuckmusic"),
       ],[
         InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇꜱ ☑️", url="https://t.me/chuckmusicupdate"),
-        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ➡️", url="https://t.me/Kittu_t6he_criminal"),
+        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ➡️", url="https://t.me/Kittu_the_criminal"),
       ]]
     )
   

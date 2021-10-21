@@ -1,23 +1,3 @@
-#"""
-#MIT License
-#Copyright (C) 2021 Awesome-RJ
-#This file is part of @Cutiepii_Robot (Telegram Bot)
-#Permission is hereby granted, free of charge, to any person obtaining a copy
-#of this software and associated documentation files (the "Software"), to deal
-#in the Software without restriction, including without limitation the rights
-#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-#copies of the Software, and to permit persons to whom the Software is
-#furnished to do so, subject to the following conditions:
-#The above copyright notice and this permission notice shall be included in all
-#copies or substantial portions of the Software.
-#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-#SOFTWARE.
-#"""
 
 import os
 import io
@@ -60,7 +40,6 @@ LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
                          "https://telegra.ph/file/ff9053f2c7bfb2badc99e.jpg",
                          "https://telegra.ph/file/00b9ebbb816285d9a59f9.jpg",
                          "https://telegra.ph/file/ad92e1c829d14afa25cf2.jpg",
-                         "https://telegra.ph/file/58d45cc3374e7b28a1e67.jpg",
                          "https://telegra.ph/file/4140a0b3f27c302fd81cb.jpg",
                          "https://telegra.ph/file/c4db2b5c84c1d90f5ac8a.jpg",
                          "https://telegra.ph/file/c0da5080a3ff7643ddeb4.jpg",

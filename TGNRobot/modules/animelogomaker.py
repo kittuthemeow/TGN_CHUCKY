@@ -18,8 +18,7 @@ from TGNRobot import telethn
 from PIL import Image, ImageDraw, ImageFont
 
 
-LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
-                         "https://telegra.ph/file/c1ff2d5ec5e1b5bd1b200.jpg",
+LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",     
                          "https://telegra.ph/file/08c5fbe14cc4b13d1de05.jpg",
                          "https://telegra.ph/file/66614a049d74fe2a220dc.jpg",
                          "https://telegra.ph/file/9cc1e4b24bfa13873bd66.jpg",
@@ -282,11 +281,11 @@ async def lego(event):
     x = (image_widthz-w)/2
     y = ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
-    fname = "Cutiepii.png"
+    fname = "CHUNKY.png"
     img.save(fname, "png")
     await telethn.send_file(event.chat_id, file=fname, caption = "Made by @CHUCKYMUSIC_BOT")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
  except Exception as e:
-    await event.reply('Error, Report @chuckmusicuc, {e}')
+    await event.reply('Error, Report @chuckmusic, {e}')

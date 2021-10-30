@@ -3,7 +3,8 @@
 import os
 import shutil
 
-import cv2
+import TGNRobot
+
 from PIL import Image, ImageEnhance, ImageFilter
 
 

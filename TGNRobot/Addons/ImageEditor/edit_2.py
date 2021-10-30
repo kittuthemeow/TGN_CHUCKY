@@ -3,7 +3,7 @@ import os
 import shutil
 
 import TGNRobot
-import numpy as np
+import TGNRobot as np
 from PIL import Image, ImageDraw, ImageEnhance
 
 

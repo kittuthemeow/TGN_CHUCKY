@@ -3,8 +3,8 @@ import io
 import os
 import shutil
 
-import cv2
-import numpy as np
+import TGNRobot
+import TGNRobot as np
 import requests
 from PIL import Image, ImageDraw, ImageOps
 

@@ -106,7 +106,7 @@ HELP_STRINGS = """
 `ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
 ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/54412ffdffd6e09a17521.jpg)"""
 
-START_IMG = "https://telegra.ph/file/d6dacb7428fb2e8ecbb9e.mp4"
+START_IMG = "https://telegra.ph/file/dabd8ab1fe384978eeabd.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  LMAO NO NEED ."""

@@ -8,10 +8,6 @@ from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
 from TGNRobot import dispatcher
-from TGNRobot.modules.disable import DisableAbleCommandHandler
-from TGNRobot.modules.helper_funcs.chat_status import is_user_admin, user_admin
-from TGNRobot.modules.helper_funcs.extraction import extract_user
-
 #sleep how many times after each edit in 'lol' 
 EDIT_SLEEP = 1
 #edit how many times in 'lol' 
@@ -89,14 +85,6 @@ def abuse(bot: Bot, update: Update):
 __help__ = """
 ➥ /abuse abuse in Tamil
 """
-
-
-lel =DisableAbleCommandHandler("tabuse", tabuse)
-
-
-dispatcher.add_handler(lel)
-
-
 
 __mod_name__ = "Animation"
 __command_list__ = ["tabuse"]

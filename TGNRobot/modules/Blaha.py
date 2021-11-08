@@ -87,5 +87,3 @@ __help__ = """
 """
 
 __mod_name__ = "Animation"
-__command_list__ = ["tabuse"]
-__handlers__ = [lel]

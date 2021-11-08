@@ -93,11 +93,11 @@ def sing(bot: Bot, update: Update):
       message.reply_text(random.choice(SONG_STRINGS))
 
 __help__ = """
-- /abuse : Abuse someone in tamil🤣
-- /sing : Lyrics of some random tamil songs❣️
+- /abuse : Abuse someone in malayalam.
+- /sing : First lines of some random malayalam Songs.
 """
 
-__mod_name__ = "Tamil💥"
+__mod_name__ = "EXTRAS"
 
 ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 SING_HANDLER = DisableAbleCommandHandler("sing", sing)

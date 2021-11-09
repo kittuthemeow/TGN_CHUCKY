@@ -9,7 +9,7 @@ from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
 import TGNRobot.modules.sql.gmutsql as sql
-from TGNRobot import dispatcher, DEV_USERS,STRICT_GMUTE
+from TGNRobot import dispatcher, DEV_USERS
 from TGNRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from TGNRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from TGNRobot.modules.helper_funcs.filters import CustomFilters

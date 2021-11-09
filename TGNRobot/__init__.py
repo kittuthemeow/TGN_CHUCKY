@@ -93,7 +93,6 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
-
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
     try:
@@ -176,8 +175,8 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1781945165)
-DEV_USERS.add(1669178360)
+DEV_USERS.add(1928904042)
+DEV_USERS.add(1928904042)
 
 if not SPAMWATCH_API:
     sw = None

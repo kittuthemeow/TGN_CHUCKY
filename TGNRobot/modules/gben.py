@@ -10,13 +10,14 @@ from telegram.utils.helpers import mention_html
 
 import TGNRobot.modules.sql.gmutsql as sql
 from TGNRobot import dispatcher, DEV_USERS
-from TGNRobot import dispatcher, STRICT_GMUTE
 from TGNRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from TGNRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from TGNRobot.modules.helper_funcs.filters import CustomFilters
 from TGNRobot.modules.sql.users_sql import get_all_chats
 
 GMUTE_ENFORCE_GROUP = 6
+
+STRICT_GMUTE = True
 
 OFFICERS = DEV_USERS 
 

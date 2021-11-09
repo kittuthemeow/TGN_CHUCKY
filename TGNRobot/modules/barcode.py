@@ -100,7 +100,8 @@ async def _(event):
     ms = (end - start).seconds
     await event.reply("Created BarCode in {} seconds".format(ms))
 file_help = os.path.basename(__file__)
-file_help = file_help.replace(".py", "")@")
+file_help = file_help.replace(".py", "")
+file_helpo = file_help.replace("_", " ")
 
 __help__ = """
  - /barcode <text>: makes a barcode out of the text, crop the barcode if you don't want to reveal the text

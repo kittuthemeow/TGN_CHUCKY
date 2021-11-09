@@ -50,7 +50,7 @@ if ENV:
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
       try:
-        OWNER_ID = int(os.environ.get("STRICT_GMUTE", True))
+        STRICT_GMUTE = int(os.environ.get("STRICT_GMUTE", True))
     except ValueError:
         raise Exception(" put gmute as true")
 

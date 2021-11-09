@@ -25,7 +25,7 @@ OFFICERS = DEV_USERS
 ERROR_DUMP = None
 
 @run_async
-def gmute(update, context):
+def fmute(update, context):
     message = update.effective_message  # type: Optional[Message]
     chat = update.effective_chat
     args = context.args

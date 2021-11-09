@@ -69,3 +69,4 @@ better_profanity
 nudepy
 motor
 cloudscraper
+python-barcode==0.13.1

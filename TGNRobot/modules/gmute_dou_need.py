@@ -290,7 +290,7 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 
-GMUTE_HANDLER = CommandHandler("gmute", gmute, pass_args=True,
+GMUTE_HANDLER = CommandHandler("fmute", gmute, pass_args=True,
                               filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
 UNGMUTE_HANDLER = CommandHandler("ungmute", ungmute, pass_args=True,
                                 filters=CustomFilters.sudo_filter | CustomFilters.support_filter)

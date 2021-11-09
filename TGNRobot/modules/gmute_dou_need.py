@@ -25,7 +25,7 @@ OFFICERS = DEV_USERS
 ERROR_DUMP = None
 
 @run_async
-def fmute(update, context):
+def gmute(update, context):
     message = update.effective_message  # type: Optional[Message]
     chat = update.effective_chat
     args = context.args
@@ -290,7 +290,7 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 
-GMUTE_HANDLER = CommandHandler("fmute", gmute, pass_args=True,
+GMUTE_HANDLER = CommandHandler("gmute", gmute, pass_args=True,
                               filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
 UNGMUTE_HANDLER = CommandHandler("ungmute", ungmute, pass_args=True,
                                 filters=CustomFilters.sudo_filter | CustomFilters.support_filter)

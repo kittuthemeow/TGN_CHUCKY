@@ -74,7 +74,7 @@ UNGBAN_ERRORS = {
 
 @run_async
 @support_plus
-def puish(update: Update, context: CallbackContext):
+def gban(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     message = update.effective_message
     user = update.effective_user

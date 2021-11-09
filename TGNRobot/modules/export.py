@@ -11,14 +11,14 @@ from PIL import Image, ImageDraw, ImageFont
 
 logopics = [
  
- "./TGNRobot/N2/meme/IMG_20211104_190153_323.jpg"
+ "./ADDN/IMG_20211104_190153_323.jpg"
  
 ]
  
 
 logofonts = [
  
- "./TGNRobot/N2/meme/memefont1.otf"
+ "./ADDN/memefont1.otf"
  
 ]
  

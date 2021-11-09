@@ -4,6 +4,7 @@
 from TGNRobot.events import register
 from TGNRobot import telethn as tbot
 import os
+from TGNRobot import DEV_USERS
 import random
 from PIL import Image, ImageDraw, ImageFont
 
@@ -33,6 +34,10 @@ font_choice = random.choice(logofonts)
 @register(pattern="^/meme ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
+ if event.sender_id == DEV_USERS:
+     pass
+ else:
+
     if not quew:
        await event.reply('**Provide Some Text To Draw!**')
        return
@@ -57,11 +62,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=15, stroke_fill="Yellow")
     fname2 = "Vegeta.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption=" MADE BY @FINAL_STRIKER_BOT")
+    await tbot.send_file(event.chat_id, fname2, caption="**👾UR MEME READY 🚂")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'**Error Report **, {e}')
+   await event.reply(f'**Error **, {e}')
 
    
 file_help = os.path.basename(__file__)
@@ -69,4 +74,5 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 
-mod_name = "memeCreate"
+mod_name = "memeCreater"
+

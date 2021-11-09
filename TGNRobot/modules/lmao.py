@@ -33,10 +33,6 @@ font_choice = random.choice(logofonts)
 @register(pattern="^/meme ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
- if event.sender_id == OWNER_ID:
-     pass
- else:
-
     if not quew:
        await event.reply('**Provide Some Text To Draw!**')
        return

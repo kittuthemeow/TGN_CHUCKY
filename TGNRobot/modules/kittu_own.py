@@ -7,14 +7,14 @@ from TGNRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
-def truth(update: Update, context: CallbackContext):
+def abuse(update: Update, context: CallbackContext):
     args = context.args
-    update.effective_message.reply_text(random.choice(truth_and_dare_string.TRUTH))
+    update.effective_message.reply_text(random.choice(kittu_ownstring.abuse))
 
 @run_async
-def dare(update: Update, context: CallbackContext):
+def sing(update: Update, context: CallbackContext):
     args = context.args
-    update.effective_message.reply_text(random.choice(truth_and_dare_string.DARE))
+    update.effective_message.reply_text(random.choice(kittu_ownstring.sing))
 
     
 ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)

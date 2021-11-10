@@ -74,9 +74,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴏɪ, ɪ ᴍ 🇨ԋυƈƙყ 🇲☋ⓢ☿☾
+ʜᴏɪ, ɪ ᴍ Ꭺʟᴏɴᴇ ҡɪɴɢ
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
- [❤](https://telegra.ph/file/4f365a23c2ef0a941254e.jpg),
+ [❤](https://telegra.ph/file/aa6a938993f6aa84a6a97.jpg),
 """
 
 STICKERS = (
@@ -88,7 +88,7 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-            text="🤖ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/Chuckymusic_bot?startgroup=true"),
+            text="🤖ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
     ],
     [
         
@@ -97,9 +97,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="✴️ᴜᴘᴅᴀᴛᴇꜱ ✴️", url=f"https://t.me/chuckmusicupdate"),
+        InlineKeyboardButton(text="✴️ᴜᴘᴅᴀᴛᴇꜱ ✴️", url=f"https://t.me/FINAL_STRIKERLOGS"),
         InlineKeyboardButton(
-            text="🔱ᴛ𝒂𝒎𝒊𝒍 ᴄʜᴀᴛ🔱", url=f"https://t.me/tamilchatkings"
+            text="MY FRND", url=f"https://t.me/VegetaRobot"
         ),
     ],
     [
@@ -110,14 +110,12 @@ buttons = [
 
 HELP_STRINGS = """
 `ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
-ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/20601c16b0f3802c08a34.jpg)"""
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/54412ffdffd6e09a17521.jpg)"""
 
-START_IMG = "https://telegra.ph/file/d6dacb7428fb2e8ecbb9e.mp4"
+START_IMG = "https://telegra.ph/file/dabd8ab1fe384978eeabd.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Lucifer](t.me/detctective_de) \
- Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/Zaid_updates) \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+ LMAO NO NEED ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -230,7 +228,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code>🇨ԋυƈƙყ is Here For You❤\n𝒏𝒂𝒏 𝒖𝒊𝒓 𝒐𝒅𝒂 𝒕𝒉𝒂𝒏 𝒆𝒓𝒖𝒌𝒂𝒏</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code> Ꭺʟᴏɴᴇ ҡɪɴɢHere For You❤\n𝒏𝒂𝒏 𝒖𝒊𝒓 𝒐𝒅𝒂 𝒕𝒉𝒂𝒏 𝒆𝒓𝒖𝒌𝒂𝒏</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,
@@ -376,7 +374,7 @@ def layla_about_callback(update, context):
                  \n❍ TGN  @The_Godfather_Network
                  \n❍ Support Group @Godfathersupport
                  \n❍ Assistant @TGN\_Assistant.
-                 \nHere is the [💾Repository](https://github.com/Itsunknown-12/TGN-Robot).
+                 \nHere is the [💾Repository](https://github.com).
                  \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -403,8 +401,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *TGNRobot*
-                 \nHere is the [Source Code](https://github.com/Itsunknown-12/TGN-Robot) .""",
+            text=""" Hi..🤗 I'm *Ꭺʟᴏɴᴇ ҡɪɴɢ*
+                 \nHere is the [Source Code](https://github.com) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -651,7 +649,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1928904042 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -745,7 +743,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("lmao check bot.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):

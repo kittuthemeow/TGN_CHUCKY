@@ -74,9 +74,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴏɪ, ɪ ᴍ Ꭺʟᴏɴᴇ ҡɪɴɢ
+ʜᴏɪ, 𝚒𝚊𝚖 𝚌𝚑𝚞𝚌𝚔𝚢
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
- [❤](https://telegra.ph/file/aa6a938993f6aa84a6a97.jpg),
+ [❤](https://telegra.ph/file/2fa3a833f3ccc1d98dba1.jpg),
 """
 
 STICKERS = (
@@ -97,9 +97,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="✴️ᴜᴘᴅᴀᴛᴇꜱ ✴️", url=f"https://t.me/FINAL_STRIKERLOGS"),
+        InlineKeyboardButton(text="✴️ᴜᴘᴅᴀᴛᴇꜱ ✴️", url=f"https://t.me/thanimaibots"),
         InlineKeyboardButton(
-            text="MY FRND", url=f"https://t.me/VegetaRobot"
+            text="MY FRND", url=f"https://t.me/FINAL_STRIKER_BOT"
         ),
     ],
     [
@@ -112,7 +112,7 @@ HELP_STRINGS = """
 `ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
 ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/54412ffdffd6e09a17521.jpg)"""
 
-START_IMG = "https://telegra.ph/file/dabd8ab1fe384978eeabd.mp4"
+START_IMG = "https://telegra.ph/file/0dc79c6b87d5e08999320.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  LMAO NO NEED ."""
@@ -228,7 +228,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code> Ꭺʟᴏɴᴇ ҡɪɴɢHere For You❤\n𝒏𝒂𝒏 𝒖𝒊𝒓 𝒐𝒅𝒂 𝒕𝒉𝒂𝒏 𝒆𝒓𝒖𝒌𝒂𝒏</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code> 𝚌𝚑𝚞𝚌𝚔𝚢Here For You❤\n𝒏𝒂𝒏 𝒖𝒊𝒓 𝒐𝒅𝒂 𝒕𝒉𝒂𝒏 𝒆𝒓𝒖𝒌𝒂𝒏</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,

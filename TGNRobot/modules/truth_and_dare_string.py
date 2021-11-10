@@ -1,5 +1,5 @@
 TRUTH = (
-    "நீங்கள் காதலுடன் இருந்த யாரையாவது ஏமாற்றியிருக்கிறீர்களா?",
+"நீங்கள் காதலுடன் இருந்த யாரையாவது ஏமாற்றியிருக்கிறீர்களா?",
 "உங்கள் மிகவும் மோசமான தேதியில் என்ன நடந்தது? [1]",
 "நீங்கள் எப்போதாவது சாலையின் ஓரத்தில் சிறுநீர் கழித்திருக்கிறீர்களா?",
 "மிகவும் சங்கடமான எந்தப் பொருளை நீங்கள் வைத்திருக்கிறீர்கள்?",
@@ -11,58 +11,46 @@ TRUTH = (
 "நீங்கள் ஒருவரை நோக்கி விளையாடிய மிக மோசமான குறும்பு எது?",
 "உங்களைப் பற்றி நீங்கள் யாரிடமும் சொல்லாத சங்கடமான கதை என்ன?",
 "நீங்கள் படுக்கையில் கடைசியாக எப்போது சிறுநீர் கழித்தீர்கள்?",
-  
 )
 
 DARE = (
-    "Show the most embarrassing photo on your phone"
-    "Show the last five people you texted and what the messages said",
-    "Let the rest of the group DM someone from your Instagram account",
-    "Eat a raw piece of garlic",
-    "Do 100 squats",
-    "Keep three ice cubes in your mouth until they melt",
-    "Say something dirty to the person on your leftYou've got company!",
-    "Give a foot massage to the person on your right",
-    "Put 10 different available liquids into a cup and drink it",
-    "*Yell out the first word that comes to your mind",
-    "Give a lap dance to someone of your choice",
-    "Remove four items of clothing",
-    "Like the first 15 posts on your Facebook newsfeed",
-    "Eat a spoonful of mustard",
-    "Keep your eyes closed until it's your go again",
-    "Send a sext to the last person in your phonebook",
-    "Show off your orgasm face",
-    "Seductively eat a banana",
-    "Empty out your wallet/purse and show everyone what's inside",
-    "Do your best sexy crawl",
-    "Pretend to be the person to your right for 10 minutes",
-    "Eat a snack without using your hands",
-    "Say two honest things about everyone else in the group",
-    "Twerk for a minute",
-    "Try and make the group laugh as quickly as possible",
-    "Try to put your whole fist in your mouth",
-    "Tell everyone an embarrassing story about yourself",
-    "Try to lick your elbow",
-    "Post the oldest selfie on your phone on Instagram Stories",
-    "Tell the saddest story you know",
-    "Howl like a wolf for two minutes",
-    "Dance without music for two minutes",
-    "Pole dance with an imaginary pole",
-    "Let someone else tickle you and try not to laugh",
-    "Put as many snacks into your mouth at once as you can",
-    "Send your most recent selfie.",
-    "Send your ugliest selfie.",
-    "Send a screenshot of your facebook search history",
-    "Send a screenshot of your gallery.",
-    "Send a screenshot of your messenger inbox",
-    "Tell something very intimate.",
-    "Send a screenshot of your twitter inbox",
-    "Send a screenshot of your homescreen.",
-    "Send a cover of your favorite song. 🎤",
-    "Do a lyric prank on someone and send proof.",
-    "Confess to your current crush. ❤️",
-    "Declare who is your true love.",
-    "Send a screenshot of your gallery.",
-    "Set your crush’s picture as your dp.",
-    "Suggest me more dares.",
+    "குழுவை ஒரு பாடலைத் தேர்ந்தெடுத்து, அனைத்து வீரர்களுக்கும் ஒரு நிகழ்ச்சியை வைக்கும்போது, ​​பாடலுடன் உதட்டு ஒத்திசைவு செய்யட்டும்.",
+
+
+
+
+        "எதிர் பாலினத்தைப் போல் உடுத்தி, உங்களைப் படம் எடுக்க அனுமதிக்கவும்.",
+
+
+    "குழுவில் உள்ள ஒருவர் நிரந்தர மார்க்கர் மூலம் உங்கள் உடலில் சங்கடமான ஒன்றை எழுதட்டும்.",
+
+
+
+     "குழுவில் உள்ள ஒருவர் உங்களுக்கு புதிய சிகை அலங்காரம் கொடுக்கட்டும்.",
+
+
+      "விளையாட்டின் மற்ற பகுதிகளுக்கு உச்சரிப்புடன் பேசுங்கள்.",
+
+
+   "உங்களைப் போன்ற ஒரே பாலினத்தைச் சேர்ந்த குழுவின் உறுப்பினருடன் ஊர்சுற்றுங்கள்.",
+
+
+      "உங்கள் தலையில் ஒரு மூலு முட்டையை உடைக்கவும்.",
+
+
+
+    "முகத்தை நனைத்து மாவில் போடவும்.",
+
+
+        "எந்த இசையும் இல்லாமல் ஒரு நிமிடம் நடனமாடுங்கள்.",
+
+
+
+
+       "உங்கள் கால்சட்டைக்கு கீழே இரண்டு ஐஸ் கட்டிகளை வைக்கவும்.",
 )
+
+
+
+
+# credits @Kittu_the_criminal don't kang without credits else ur (+_+)

@@ -79,6 +79,12 @@ PM_START_TEXT = """
  [❤](https://telegra.ph/file/4f365a23c2ef0a941254e.jpg),
 """
 
+STICKERS = (
+      "CAACAgUAAx0CTpRfGwACF41hMfagTfWdHNFici1VtOCQVVNYmgACgh8AAsZRxhU6tKJa_ySnnCAE",
+      "CAACAgUAAx0CTpRfGwACF5phMfi5vgKwQFg6KuzHiEc79QFT0QACCR4AAsZRxhVu32VqEb3_1SAE",
+      "CAACAgUAAx0CTpRfGwACGIBhQcGJDHuuXsU5el3I86SEx3nTpgAC2R8AAsZRxhUpEe6EcVukQCAE",
+)    
+
 buttons = [
     [
         InlineKeyboardButton(

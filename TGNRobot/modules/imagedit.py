@@ -6,7 +6,7 @@ from pyrogram.types import (
     Message,
 )
 
-from TGNRobot.imge.edit_1 import (  # pylint:disable=import-error
+from TGNRobot.lmge.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,

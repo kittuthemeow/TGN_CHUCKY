@@ -1,21 +1,16 @@
 TRUTH = (
-    "Have you ghosted someone?"
-    "Have you ever walked in on your parents doing 'it'?",
-    "Who was the last person you liked the most? Why?",
-    "Have you ever been suspended from school?",
-    "If you had to choose between going naked or having your thoughts appear in thought bubbles above your head for everyone to read, which would you choose?",
-    "What’s the one thing you’re afraid to lose?",
-    "Do you like someone as of the moment?",
-    "One thing about your best friend you are jealous of?",
-    "Would you cheat on your boyfriend for a rich guy?",
-    "What is your biggest turn on?",
-    "When’s the last time you lied to your parents and why?",
-    "Describe your ideal partner.",
-    "What’s the scariest thing you’ve ever done?",
-    "Have you ever picked your nose and eaten it?",
-    "When’s the last time you lied to your parents and why?",
-    "Have you ever lied about your age to participate in a contest?",
-    "Have you ever been caught checking someone out?",
+    "நீங்கள் காதலுடன் இருந்த யாரையாவது ஏமாற்றியிருக்கிறீர்களா?",
+"உங்கள் மிகவும் மோசமான தேதியில் என்ன நடந்தது? [1]",
+"நீங்கள் எப்போதாவது சாலையின் ஓரத்தில் சிறுநீர் கழித்திருக்கிறீர்களா?",
+"மிகவும் சங்கடமான எந்தப் பொருளை நீங்கள் வைத்திருக்கிறீர்கள்?",
+"நீங்கள் எப்போதாவது ஒருவருடன் முறித்துக் கொண்டதற்கு மிகவும் அபத்தமான காரணம் என்ன?",
+"உங்களிடம் உள்ள மிக மோசமான பழக்கம் என்ன?",
+"உங்கள் பெற்றோர் ஒருபோதும் கண்டுகொள்ள மாட்டார்கள் என்று நீங்கள் நம்பும் ஒரு விஷயம் என்ன?",
+"யாரோ உங்களுக்கு வழங்கிய மிகவும் சங்கடமான புனைப்பெயர் என்ன?",
+"நீங்கள் யாரிடமாவது சொன்னதில் பெரிய பொய் என்ன?",
+"நீங்கள் ஒருவரை நோக்கி விளையாடிய மிக மோசமான குறும்பு எது?
+"உங்களைப் பற்றி நீங்கள் யாரிடமும் சொல்லாத சங்கடமான கதை என்ன?",
+"நீங்கள் படுக்கையில் கடைசியாக எப்போது சிறுநீர் கழித்தீர்கள்?",
   
 )
 

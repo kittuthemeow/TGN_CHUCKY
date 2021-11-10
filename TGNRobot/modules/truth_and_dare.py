@@ -15,12 +15,25 @@ def truth(update: Update, context: CallbackContext):
 def dare(update: Update, context: CallbackContext):
     args = context.args
     update.effective_message.reply_text(random.choice(truth_and_dare_string.DARE))
+ 
+@run_async
+def abuse(update: Update, context: CallbackContext):
+    args = context.args
+    update.effective_message.reply_text(random.choice(truth_and_dare_string.abuse))
+
+@run_async
+def sing(update: Update, context: CallbackContext):
+    args = context.args
+    update.effective_message.reply_text(random.choice(truth_and_dare_string.sing))
 
     
+ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
+SING_HANDLER = DisableAbleCommandHandler("sing", sing)
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 
-
+ 
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
-
+dispatcher.add_handler(ABUSE_HANDLER)
+dispatcher.add_handler(SING_HANDLER)

@@ -19,12 +19,12 @@ def dare(update: Update, context: CallbackContext):
 @run_async
 def abuse(update: Update, context: CallbackContext):
     args = context.args
-    update.effective_message.reply_text(random.choice(truth_and_dare_string.abuse))
+    update.effective_message.reply_text(random.choice(truth_and_dare_string.ABUSE_STRINGS))
 
 @run_async
 def sing(update: Update, context: CallbackContext):
     args = context.args
-    update.effective_message.reply_text(random.choice(truth_and_dare_string.sing))
+    update.effective_message.reply_text(random.choice(truth_and_dare_string.SONG_STRINGS))
 
     
 ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)

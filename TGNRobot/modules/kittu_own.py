@@ -1,6 +1,6 @@
 import html
 import random
-import TGNRobot.modules.kittu_own as kittu_own_string
+import TGNRobot.modules.kittu_own as kittu_ownstring
 from TGNRobot import dispatcher
 from telegram import ParseMode, Update, Bot
 from TGNRobot.modules.disable import DisableAbleCommandHandler
@@ -17,9 +17,8 @@ def dare(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(truth_and_dare_string.DARE))
 
     
-TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
-DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
+ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
+SING_HANDLER = DisableAbleCommandHandler("sing", sing)
 
-
-dispatcher.add_handler(TRUTH_HANDLER)
-dispatcher.add_handler(DARE_HANDLER)
+dispatcher.add_handler(ABUSE_HANDLER)
+dispatcher.add_handler(SING_HANDLER)

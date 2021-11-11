@@ -88,7 +88,7 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-            text="🤖ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/FINAL_STRIKER_BOT?startgroup=true"),
+            text="🤖ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/chuckymusic_bot?startgroup=true"),
     ],
     [
         

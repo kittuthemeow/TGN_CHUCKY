@@ -86,4 +86,3 @@ youtube_search
 pretty-errors
 odmantic
 python-barcode==0.13.1
-opencv-python-headless

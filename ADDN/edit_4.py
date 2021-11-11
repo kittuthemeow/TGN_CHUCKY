@@ -7,7 +7,7 @@ import numpy as np
 import requests
 from PIL import Image, ImageDraw, ImageOps
 
-from mrjoker import REM_BG_API_KEY
+REM_BG_API_KEY = dxsh728mZMDmj4ijSZCNPZig
 
 async def rotate_90(client, message):
     try:
@@ -244,7 +244,7 @@ async def removebg_plain(client, message):
                     "https://api.remove.bg/v1.0/removebg",
                     files={"image_file": open(download_location, "rb")},
                     data={"size": "auto"},
-                    headers={"X-Api-Key": REM_BG_API_KEY},
+                    headers={"X-Api-Key": dxsh728mZMDmj4ijSZCNPZig},
                 )
                 if response.status_code == 200:
                     with open(f"{edit_img_loc}", "wb") as out:
@@ -284,7 +284,7 @@ async def removebg_plain(client, message):
 
 async def removebg_white(client, message):
     try:
-        if REM_BG_API_KEY != "":
+        if REM_BG_API_KEY != "dxsh728mZMDmj4ijSZCNPZig":
             userid = str(message.chat.id)
             if not os.path.isdir(f"./DOWNLOADS/{userid}"):
                 os.makedirs(f"./DOWNLOADS/{userid}")

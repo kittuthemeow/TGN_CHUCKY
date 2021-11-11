@@ -284,7 +284,7 @@ async def removebg_plain(client, message):
 
 async def removebg_white(client, message):
     try:
-        if REM_BG_API_KEY != "dxsh728mZMDmj4ijSZCNPZig":
+        if REM_BG_API_KEY != "":
             userid = str(message.chat.id)
             if not os.path.isdir(f"./DOWNLOADS/{userid}"):
                 os.makedirs(f"./DOWNLOADS/{userid}")

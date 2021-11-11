@@ -1,4 +1,5 @@
 # @VALTAOITHEBOT Dont remove this
+# ok I I'll not romove 
 
 from TGNRobot.events import register
 from TGNRobot import OWNER_ID
@@ -9,17 +10,12 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 logopics = [
-                                                                                        
- "./TGNRobot/resources/logopics/photo_2021-09-11_10-41-31.jpg",
-	
+ "./TGNRobot/resources/logopics/photo_2021-11-11_15-10-44.jpg",                         
+ "./TGNRobot/resources/logopics/photo_2021-09-11_10-41-31.jpg",	
  "./TGNRobot/resources/logopics/photo_2021-09-11_15-46-57.jpg",
-
  "./TGNRobot/resources/logopics/photo_2021-09-18_13-56-02.jpg",
-
- "./TGNRobot/resources/logopics/photo_2021-09-18_14-07-29.jpg",
-	
- "./TGNRobot/resources/logopics/photo_2021-09-14_16-34-25.jpg"
- 
+ "./TGNRobot/resources/logopics/photo_2021-09-18_14-07-29.jpg",	
+ "./TGNRobot/resources/logopics/photo_2021-09-14_16-34-25.jpg" 
 ]
 
 logofonts = [

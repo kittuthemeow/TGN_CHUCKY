@@ -6,7 +6,7 @@ from pyrogram.types import (
     Message,
 )
 
-from ADDN.edit_1 import (  # pylint:disable=import-error
+from ADDN.edit_1 import ( 
     black_white,
     box_blur,
     bright,

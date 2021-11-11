@@ -23,16 +23,16 @@ def animequotes(update: Update, context: CallbackContext):
         random.choice(animequotes_strings.QUOTES_IMG))
 
 __help__ = """
- • `/Beybladequotes`*:* gives random Beyblade memes
- @VALTAOITHEBOT
+ • `/memes`*:* gives random Tamil memes
+ 
 """
-ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("Beybladequotes", animequotes)
+ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("memes", animequotes)
 
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 
 __mod_name__ = "Beybladequotes"
 __command_list__ = [
-    "Beybladequotes"
+    "memes"
 ]
 __handlers__ = [
     ANIMEQUOTES_HANDLER

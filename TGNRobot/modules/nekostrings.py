@@ -1,6 +1,6 @@
 # @Chuckymusic_bot Dont remove this
 
-NEKO_GIFS = [
+NEKO_G = [
       "CgACAgQAAx0CS3FrwgABA7QRYN4Qh3gRt9W7EyBclz66lrnRCLEAAlwCAAILXpRS0AXMoo4Mt0ggBA",
       "CgACAgQAAx0CS3FrwgABA7QTYN4QoQU5h6x3dVKWHhpxjof7dGYAAm4CAAImOp1SFu9fLxqQHTsgBA",
       "CgACAgQAAx0CS3FrwgABA7QXYN4Qr5diE0lFazb_nICRWcBky1QAAg4CAALeXaRSOV07ULDF8w8gBA",
@@ -15,7 +15,7 @@ NEKO_GIFS = [
 
 
 
-NEKO_TEXT = [
+NEKO_T = [
      "@weebarsh, the Neko, Scratches you!",
      "Nya! {user1} is a Neko!",
      "My Heart Goes Meow😻",

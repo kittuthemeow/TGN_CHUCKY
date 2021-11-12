@@ -1,4 +1,4 @@
-# @VALTAOITHEBOT Dont remove this
+# @Chuckymusic_bot Dont remove this
 
 NEKO_GIFS = [
       "CgACAgQAAx0CS3FrwgABA7QRYN4Qh3gRt9W7EyBclz66lrnRCLEAAlwCAAILXpRS0AXMoo4Mt0ggBA",

@@ -82,7 +82,6 @@ opencv-python-headless
 pytube
 tldextract
 cloudmersive_virus_api_client
-aiohttpsession
 youtube_search
 pretty-errors
 odmantic

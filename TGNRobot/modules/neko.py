@@ -39,13 +39,13 @@ def nyaa(update: Update, context: CallbackContext):
     nyaa_type = random.choice(("Text", "Gif"))
     if nyaa_type == "Gif":
         try:
-            temp = random.choice(nekostrings.NEKO_GIFS)
+            temp = random.choice(nekostrings.NEKO_G)
             reply_to.reply_animation(temp)
         except BadRequest:
             nyaa_type = "Text"
 
     if nyaa_type == "Text":
-        temp = random.choice(nekostrings.NEKO_TEXT)
+        temp = random.choice(nekostrings.NEKO_T)
         reply = temp.format(user1=user1, user2=user2)
         reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
 
@@ -93,12 +93,12 @@ __help__ = """
 """
 
 
-NYAA_HANDLER = DisableAbleCommandHandler("nyaa", nyaa)
-MEOW_HANDLER = DisableAbleCommandHandler("meow", meow)
+NYAA = DisableAbleCommandHandler("nyaa", nyaa)
+MEOW = DisableAbleCommandHandler("meow", meow)
 
 
-dispatcher.add_handler(NYAA_HANDLER)
-dispatcher.add_handler(MEOW_HANDLER)
+dispatcher.add_handler(NYAA)
+dispatcher.add_handler(MEOW)
 
 __mod_name__ = "Neko"
 

@@ -1,6 +1,7 @@
 import importlib
 import time
 import re
+import random
 from sys import argv
 from typing import Optional
 
@@ -80,10 +81,12 @@ PM_START_TEXT = """
 """
 
 STICKERS = (
-      "CAACAgUAAx0CTpRfGwACF41hMfagTfWdHNFici1VtOCQVVNYmgACgh8AAsZRxhU6tKJa_ySnnCAE",
-      "CAACAgUAAx0CTpRfGwACF5phMfi5vgKwQFg6KuzHiEc79QFT0QACCR4AAsZRxhVu32VqEb3_1SAE",
-      "CAACAgUAAx0CTpRfGwACGIBhQcGJDHuuXsU5el3I86SEx3nTpgAC2R8AAsZRxhUpEe6EcVukQCAE",
+      "CAACAgUAAx0CW0ZoLAACOT9hj1QOLpEtrd7M80bNHuG73m4QzAACTAUAAuzhgVTfodwGWkPrXSIE",
+      "CAACAgUAAx0CW0ZoLAACOUBhj1QRHASOSsdzb_M9BYpcw64JVQACXwQAAlo5eFR1_-1QkFryFSIE",
+      "CAACAgUAAx0CW0ZoLAACOUFhj1QWHs8AATBnUaqrL5zqywVSlzYAAiIEAALI1oFUKAR285aB2p0iBA",
+      "CAACAgUAAx0CW0ZoLAACOUJhj1Qd763XeQAB2kavmTzpJkgUJvsAAvkDAAIpgXlURpk2GwVlfDkiBA",
 )    
+
 
 buttons = [
     [
@@ -217,11 +220,12 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
+            update.effective_message.reply_sticker(
+                random.choice(STICKERS),
+                timeout=60,
+            )
             update.effective_message.reply_text(
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(context.bot.first_name)),
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,

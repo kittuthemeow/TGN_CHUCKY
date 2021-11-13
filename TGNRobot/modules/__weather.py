@@ -12,7 +12,6 @@ from telethon.tl.types import *
 from TGNRobot import *
 
 from TGNRobot.events import register
-from TGNRobot import OPENWEATHERMAP_API
  
 
 

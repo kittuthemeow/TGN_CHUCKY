@@ -328,19 +328,19 @@ def weebify(update: Update, context: CallbackContext):
         message.reply_text(string)
         
         
-@run_async
 @typing_action
 def goodnight(update, context):
     message = update.effective_message
-    reply = random.choice(fun.GDNIGHT)
+    first_name = update.effective_user.first_name
+    reply = f"Good Night! {escape_markdown(first_name)}" 
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
 
 
-@run_async
 @typing_action
 def goodmorning(update, context):
     message = update.effective_message
-    reply = random.choice(fun.GDMORNING)
+    first_name = update.effective_user.first_name
+    reply = f"Good Morning! {escape_markdown(first_name)}"
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
     
 

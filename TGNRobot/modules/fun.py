@@ -9,7 +9,7 @@ from TGNRobot.modules.helper_funcs.chat_status import is_user_admin
 from TGNRobot.modules.helper_funcs.alternate import typing_action
 from TGNRobot.modules.helper_funcs.filters import CustomFilters
 from TGNRobot.modules.helper_funcs.extraction import extract_user
-from telegram import ChatPermissions, ParseMode, Update
+from telegram import ChatPermissions, ParseMode, Update                                                                                           
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
 from telegram.utils.helpers import escape_markdown
@@ -360,7 +360,6 @@ __help__ = """
  ❍ /weebify <text>*:* returns a weebified text
  ❍ /sanitize*:* always use this before /pat or any contact
  ❍ /pat*:* pats a user, or get patted
- ❍ /8ball*:* predicts using 8ball method 
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)

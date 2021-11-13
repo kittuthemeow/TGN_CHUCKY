@@ -4,26 +4,11 @@ import re
 import random
 from sys import argv
 from typing import Optional
+import TGNRobot.modules.sql.users_sql as sql
 
-from TGNRobot import (
-    ALLOW_EXCL,
-    CERT_PATH,
-    DONATION_LINK,
-    LOGGER,
-    OWNER_ID,
-    PORT,
-    SUPPORT_CHAT,
-    TOKEN,
-    URL,
-    WEBHOOK,
-    SUPPORT_CHAT,
-    dispatcher,
-    StartTime,
-    telethn,
-    pbot,
-    updater,
-)
-
+from TGNRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
+                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from TGNRobot.modules import ALL_MODULES
@@ -76,6 +61,14 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ʜᴏɪ, 𝚒𝚊𝚖 𝚌𝚑𝚞𝚌𝚔𝚢
+
+*𝐇𝐄𝐘! {},*
+
+┏━━━━━━━━━━━━━━━━
+┣ ₪ *Uptime:* `{}`
+┣ ₪ `{}` *users, across* `{}` *chats.*
+┗━━━━━━━━━━━━━━━━━
+
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
  [❤](https://telegra.ph/file/2fa3a833f3ccc1d98dba1.jpg),
 """
@@ -224,8 +217,13 @@ def start(update: Update, context: CallbackContext):
                 random.choice(STICKERS),
                 timeout=60,
             )
+            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,

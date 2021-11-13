@@ -14,7 +14,7 @@ ABUSE_STRINGS = (
     "Dai unaya na kutralathula pathene🤔 ovvoru trees ka thavi thavi pova🤭 unaku inga enna vela 🤣",
     "Na unaya eppudi thitunalu unayala hair ah kooda pudunga mudiyathu🤣🤣🤣",
     "Moonja odaichi kaila koduthuruve pathuko🤫",
-    "Enga team no way kitta mothi par da mudinja🤣, unayala hair ah kooda pudunga mudiyathu🤭,only for haters😒",
+    "Enga kitta mothi par da mudinja🤣, unayala hair ah kooda pudunga mudiyathu🤭,only for haters😒",
     "Ivan evan da mutta paiyan🤢",
     "yenaya ethavathu un grp la add panni admin podu na soldre😒",
     "Yar da ivan loosu mathiri olaruran",

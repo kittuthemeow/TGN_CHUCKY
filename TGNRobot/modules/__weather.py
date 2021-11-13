@@ -15,8 +15,6 @@ from TGNRobot.events import register
  
 
 
-OPENWEATHERMAP_API = fd16f6efd31662ee0e30fd287a83c198
-
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
         return isinstance(

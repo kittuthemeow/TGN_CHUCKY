@@ -12,7 +12,10 @@ from telethon.tl.types import *
 from TGNRobot import *
 
 from TGNRobot.events import register
+ 
 
+
+OPENWEATHERMAP_API = fd16f6efd31662ee0e30fd287a83c198
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
@@ -37,7 +40,7 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     async with aiohttp.ClientSession() as session:
         response_api_zero = await session.get(
-            sample_url.format(input_str, fd16f6efd31662ee0e30fd287a83c198)
+            sample_url.format(input_str, OPENWEATHERMAP_API)
         )
     response_api = await response_api_zero.json()
     if response_api["cod"] == 200:

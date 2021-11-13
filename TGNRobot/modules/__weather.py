@@ -37,7 +37,7 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     async with aiohttp.ClientSession() as session:
         response_api_zero = await session.get(
-            sample_url.format(input_str, OPENWEATHERMAP_ID)
+            sample_url.format(input_str, fd16f6efd31662ee0e30fd287a83c198)
         )
     response_api = await response_api_zero.json()
     if response_api["cod"] == 200:

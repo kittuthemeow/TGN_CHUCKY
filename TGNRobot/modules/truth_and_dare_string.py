@@ -152,7 +152,7 @@ TRUTH = (
 )
 
    
-bancode= """ Here is Help for **Bancodes** :-
+bancode = """ Here is Help for **Bancodes** :-
 **❂** `{SXSx00}` **SCAMMER.**
 **❂** `{SXSx01}` **SPAM ADDING MEMBER.**
 **❂** `{SXSx03}` **ABUSE SPAM.**

@@ -150,34 +150,7 @@ TRUTH = (
 "நாங்கள் உங்கள் ஆழ்ந்த மற்றும் இருண்ட பயம்?",
 "காதலில் ஈடுபட்டதற்காக நீங்கள் மிகவும் வருந்திய ஒரு நபர் யார்?",
 )
-
-   
-bancode = (""" Here is Help for **Bancodes** :-
-**❂** `{SXSx00}` **SCAMMER.**
-**❂** `{SXSx01}` **SPAM ADDING MEMBER.**
-**❂** `{SXSx03}` **ABUSE SPAM.**
-**❂** `{SXSx04}` **NSFW SPAMMER.**
-**❂** `{SXSx06}` **IMPERSONATION.**
-**❂** `{SXSx07}` **MD/BTC SCAM.**
-**❂** `{SXSx08}` **ADDING SPAMBOTS.**
-**❂** `{SXSx10}` **ILLEGAL.**
-**❂** `{SXSx11}` **PHISHING.**
-**❂** `{SXSx12}` **FRAUD PROMOTION  [ANY KIND].**
-**❂** `{SXSx13}` **CYBER THREATENING / CYBER BULLY.**
-**❂** `{SXSx14}` **CHILD ABUSE.**
-**❂** `{SXSx15}` **BAN EVASION.**
-**❂** `{SXSx16}` **SPAMBOT.**
-**❂** `{SXSx17}` **RAID INITIALIZOR.** 
-**❂** `{SXSx18}` **RAID PARTICIPANT.**
-**❂** `{SXSx19}` **KRIMINALANT.**
-**❂** `{SXSx20}` **SPAMMING VIOLENT CONTENT.**
-**❂** `{SXSx21}` **HATE SPEECH AGAINST NATIONALITY.**
-**❂** `{SXSx22}` **RAID/SPAM INFLAMMER.**
-**❂** `{SXSx23}` **PRONOGRAPHY CCONTENT PROMOTING.**
-**❂** `{SXSx24}` **PAID GIRL.**
-"""
-
-)
+ 
 
 
 # credits @Kittu_the_criminal don't kang without credits else ur (+_+)

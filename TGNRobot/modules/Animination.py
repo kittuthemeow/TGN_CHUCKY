@@ -324,7 +324,7 @@ def hi(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     msg = update.effective_message.reply_text('🤪✨✨🤪✨🤪🤪🤪\n🤪✨✨🤪✨✨🤪✨\n🤪🤪🤪🤪✨✨🤪✨\n🤪✨✨🤪✨✨🤪✨\n🤪✨✨🤪✨🤪🤪🤪\n☁☁☁☁☁☁☁☁') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(.....[x%15])
+  
         time.sleep(EDIT_SLEEP)
     msg.edit_text('😁✨✨😁✨✨😁✨\n😁✨✨😁✨✨😁✨\n😁😁😁😁✨✨😁✨\n😁✨✨😁✨✨😁✨\n😁✨✨😁✨😁😁😁\n☁☁☁☁☁☁☁☁')
 

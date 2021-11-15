@@ -8,6 +8,11 @@ from TGNRobot import dispatcher
 from TGNRobot.modules.disable import DisableAbleCommandHandler
 from TGNRobot.modules.helper_funcs.chat_status import user_admin
 
+
+
+
+
+EDIT_TIMES = 15
 #sleep how many times after each edit in 'love' 
 EDIT_SLEEP = 1
 #edit how many times in 'love' 
@@ -67,9 +72,9 @@ EDIT_SLEEP = 1
 EDIT_TIMES = 12
 
 
-
-
-
+HOI_SED = [
+      "😁✨✨😁✨✨😁✨\n😁✨✨😁✨✨😁✨\n😁😁😁😁✨✨😁✨\n😁✨✨😁✨✨😁✨\n😁✨✨😁✨😁😁😁\n☁☁☁☁☁☁☁☁"
+     ]
 kill_you = [
             "Ｆｉｉｉｉｉｒｅ",
             "(　･ิω･ิ)︻デ═一-->",    
@@ -313,7 +318,15 @@ def bombs(update: Update, context: CallbackContext):
 
 
 
-
+@user_admin
+@run_async
+def hi(update: Update, context: CallbackContext):
+    bot, args = context.bot, context.args
+    msg = update.effective_message.reply_text('🤪✨✨🤪✨🤪🤪🤪\n🤪✨✨🤪✨✨🤪✨\n🤪🤪🤪🤪✨✨🤪✨\n🤪✨✨🤪✨✨🤪✨\n🤪✨✨🤪✨🤪🤪🤪\n☁☁☁☁☁☁☁☁') 
+    for x in range(EDIT_TIMES):
+        msg.edit_text(.....[x%15])
+        time.sleep(EDIT_SLEEP)
+    msg.edit_text('😁✨✨😁✨✨😁✨\n😁✨✨😁✨✨😁✨\n😁😁😁😁✨✨😁✨\n😁✨✨😁✨✨😁✨\n😁✨✨😁✨😁😁😁\n☁☁☁☁☁☁☁☁')
 
 @user_admin
 @run_async
@@ -366,6 +379,7 @@ __help__ = """
 - /police
 """
 KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
+HOI_SED = DisableAbleCommandHandler("hi",hi)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs)
@@ -374,6 +388,7 @@ CLOCKANIMATION_HANDLER =DisableAbleCommandHandler("clock",clockanimation)
 BRAINANIMATION_HANDLER =DisableAbleCommandHandler("brain",brainanimation)
 POLICEANIMATION_HANDLER =DisableAbleCommandHandler("police",policeanimation)
 dispatcher.add_handler(KILL_HANDLER)
+dispatcher.add_handler(HOI_SED)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
 dispatcher.add_handler(BOMBS_HANDLER)

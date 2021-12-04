@@ -84,22 +84,22 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-            text="🤖ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/chuckymusic_bot?startgroup=true"),
+            text="😌ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/chuckymusic_bot?startgroup=true"),
     ],
     [
         
         InlineKeyboardButton(
-            text="⚜️ꜱᴜᴘᴘᴏʀᴛ ⚜️", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="✴️ᴜᴘᴅᴀᴛᴇꜱ ✴️", url=f"https://t.me/thanimaibots"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/thanimaibots"),
         InlineKeyboardButton(
-            text="MY FRND", url=f"https://t.me/FINAL_STRIKER_BOT"
+            text="MY FRND🤡", url=f"https://t.me/FINAL_STRIKER_BOT"
         ),
     ],
     [
-        InlineKeyboardButton(text="☣️ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ☣️", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
     ],
 ]
 

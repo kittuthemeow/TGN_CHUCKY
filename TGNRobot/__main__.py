@@ -81,11 +81,10 @@ STICKERS = (
       "CAACAgUAAx0CW0ZoLAACOUJhj1Qd763XeQAB2kavmTzpJkgUJvsAAvkDAAIpgXlURpk2GwVlfDkiBA",
 )    
 
-
 buttons = [
     [
         InlineKeyboardButton(
-                     text="ADD ME 💌", url="t.me/chuckymusic_bot?startgroup=true"),
+              text="😌ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/chuckymusic_bot?startgroup=true"),
     ],
     [
         

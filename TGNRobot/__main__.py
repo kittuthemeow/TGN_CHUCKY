@@ -60,16 +60,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴏɪ, 𝚒𝚊𝚖 𝚌𝚑𝚞𝚌𝚔𝚢
-
+ʜᴏɪ,
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! 
 *𝐇𝐄𝐘! {},*
 
 ┏━━━━━━━━━━━━━━━━
 ┣ ₪ *Uptime:* `{}`
 ┣ ₪ `{}` *users, across* `{}` *chats.*
 ┗━━━━━━━━━━━━━━━━━
+ 
 
-ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ /help
+  ʜɪᴛ /help **FOR MORE**
  [❤](https://telegra.ph/file/2fa3a833f3ccc1d98dba1.jpg),
 """
 
@@ -84,12 +85,12 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-            text="😌ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/chuckymusic_bot?startgroup=true"),
+                     text="ADD ME 💌", url="t.me/chuckymusic_bot?startgroup=true"),
     ],
     [
         
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [

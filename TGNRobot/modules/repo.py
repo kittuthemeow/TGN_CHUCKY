@@ -5,11 +5,11 @@ from pyrogram.types import *
 from TGNRobot.conf import get_str_key
 from TGNRobot import pbot
 
-REPO_TEXT = "**A Powerful [BOT](https://telegra.ph/file/e9d3e8f2a440894c55fc3.jpg) to Make Your Groups Secured and Organized ! \n\n↼ Øwñêr ⇀ : 『 [𝚔𝚒𝚝𝚝𝚞](t.me/Kittu_broken_heart) 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @chuckmusic «««"
+REPO_TEXT = "**A Powerful [BOT](https://telegra.ph/file/e9d3e8f2a440894c55fc3.jpg) to Make Your Groups Secured and Organized ! \n\n↼ Øwñêr ⇀ : 『 [𝚔𝚒𝚝𝚝𝚞](https://t.me/Kittu_the_criminal) 』\n╭──────────────\n┣─ » Python ~ 3.8.6\n┣─ » Update ~ Recently\n╰──────────────\n\n»»» @chuckmusic «««"
   
 BUTTONS = InlineKeyboardMarkup(
       [[
-        InlineKeyboardButton("⚡ ᴏᴡɴᴇʀ🔥", url=f"https://t.me/Kittu_broken_heart"),
+        InlineKeyboardButton("⚡ᴏᴡɴᴇʀ🔥", url=f"https://t.me/Kittu_the_criminal"),
         InlineKeyboardButton(" sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ  💫", url=f"https://t.me/chuckmusic"),
       ],[
         InlineKeyboardButton("ɢʙᴀɴ ʟᴏɢs ❣️", url="https://t.me/chuckmusicupdate"),

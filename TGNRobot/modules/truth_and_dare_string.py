@@ -28,7 +28,7 @@ ABUSE_STRINGS = (
     "Nandri ketta naaye😡",
     "Manda bathiram",
     "Ennada ithu mooji🤣 Sethula mukkuna mathiri iruku🤣",
-    "Vayila nalla varuthu🤬 Ean thalaivan @THE_BOSS_OF_TELEGRAM kaga tha amaithiya iruke🥱",
+    "Vayila nalla varuthu🤬 Ean thalaivan @Kittu_the_criminal kaga tha amaithiya iruke🥱",
     "Nenga moodetu irukalam nu computer solluthu sir😑",
     "Po da 8+1 🤣 8 ah yu 1 ah yu setha 81 pa 🤣",
     "Yar da avan /abuse /abuse nu pottu uyira vanguran😒",

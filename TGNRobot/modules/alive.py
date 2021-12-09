@@ -1,4 +1,4 @@
-# @VALTAOITHEBOT Dont remove this
+# @kittu_the_criminal Dont remove this
 
 from telethon import events, Button, custom
 import re, os
@@ -6,7 +6,7 @@ from TGNRobot.events import register
 from TGNRobot import telethn as tbot
 from TGNRobot import telethn as tgbot
 PHOTO = "https://telegra.ph/file/9f6d14c264fa0ff299206.jpg"
-@register(pattern=("/alive"))
+@register(pattern=("/life"))
 async def awake(event):
   PIKACHU = event.sender.first_name
   PIKACHU = "**◐ 𝙽𝚊𝚗 𝚟𝚊𝚗𝚝𝚑𝚞 𝚛𝚘𝚖𝚋𝚊 𝚏𝚊𝚜𝚝 𝚠𝚘𝚛𝚔 𝚊𝚟𝚊𝚗 𝚐𝚊 !** \n\n"

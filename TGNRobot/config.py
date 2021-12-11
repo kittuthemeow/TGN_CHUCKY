@@ -36,10 +36,3 @@ SUPPORT_CHAT = "chucky_support"
 TIGERS ="2057139792 1993128405 1181494383 1480007084 1912630709 2117266789 1044655712"
 
 TOKEN = "2003043761:AAHCRFosoRfjJMrcsJpDrGwnOTQddWG3Ul8"
-
-class Production(config):
-    LOGGER = True
-
-
-class Development(config):
-    LOGGER = True

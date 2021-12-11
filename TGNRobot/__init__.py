@@ -5,8 +5,6 @@ import time
 
 
 
-
-
 StartTime = time.time()
 
 # enable logging
@@ -101,7 +99,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from TGNRobot.config import Development as Config
+    from TGNRobot.config as Config
 
     TOKEN = Config.TOKEN
 

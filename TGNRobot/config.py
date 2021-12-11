@@ -37,9 +37,9 @@ TIGERS ="2057139792 1993128405 1181494383 1480007084 1912630709 2117266789 10446
 
 TOKEN = "2003043761:AAHCRFosoRfjJMrcsJpDrGwnOTQddWG3Ul8"
 
-class Production(Config):
+class Production(config):
     LOGGER = True
 
 
-class Development(Config):
+class Development(config):
     LOGGER = True

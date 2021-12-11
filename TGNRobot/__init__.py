@@ -28,11 +28,6 @@ if ENV:
 
 
 
-
-
-updater = Telegramcilent.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = Telegramclient("layla", API_ID, API_HASH)
-pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 

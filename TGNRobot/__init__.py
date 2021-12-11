@@ -27,8 +27,7 @@ if ENV:
 
 
 
-
-dispatcher = updater.dispatcher
+# fk fully error
 
 
 

@@ -62,15 +62,14 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ʜᴏɪ,
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! 
-*𝐇𝐄𝐘! {},*
+*𝐇𝐄𝐘! {},
 
 ┏━━━━━━━━━━━━━━━━
 ┣ ₪ *Uptime:* `{}`
 ┣ ₪ `{}` *users, across* `{}` *chats.*
 ┗━━━━━━━━━━━━━━━━━
  
-
-  ʜɪᴛ /help **FOR MORE**
+  ʜɪᴛ /help FOR MORE
  [❤](https://telegra.ph/file/2fa3a833f3ccc1d98dba1.jpg),
 """
 

@@ -1,14 +1,28 @@
 import importlib
 import time
 import re
-import random
 from sys import argv
 from typing import Optional
-import TGNRobot.modules.sql.users_sql as sql
 
-from TGNRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
-                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
+from TGNRobot import (
+    ALLOW_EXCL,
+    CERT_PATH,
+    DONATION_LINK,
+    LOGGER,
+    OWNER_ID,
+    PORT,
+    SUPPORT_CHAT,
+    TOKEN,
+    URL,
+    WEBHOOK,
+    SUPPORT_CHAT,
+    dispatcher,
+    StartTime,
+    telethn,
+    pbot,
+    updater,
+)
+
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from TGNRobot.modules import ALL_MODULES
@@ -59,58 +73,45 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT =( """
-ʜᴏɪ,
-ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! 
-*𝐇𝐄𝐘! {},
-
-┏━━━━━━━━━━━━━━━━
-┣ ₪ *Uptime:* `{}`
-┣ ₪ `{}` *users, across* `{}` *chats.*
-┗━━━━━━━━━━━━━━━━━
- 
-  ʜɪᴛ /help FOR MORE
- [❤](https://telegra.ph/file/2fa3a833f3ccc1d98dba1.jpg),
+PM_START_TEXT = """
+ʜᴏɪ, ɪ ᴍ ᴛɢɴ ʀᴏʙᴏᴛ
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ɪ ᴍ ᴠᴇʀʏ ᴘᴏᴡᴇʀꜰᴜʟʟ ʙᴏᴛ! ʜɪᴛ` /help
+ [❤](https://telegra.ph/file/cab6825dea9263d347831.jpg)
 """
-               )
-STICKERS = (
-      "CAACAgUAAx0CW0ZoLAACOT9hj1QOLpEtrd7M80bNHuG73m4QzAACTAUAAuzhgVTfodwGWkPrXSIE",
-      "CAACAgUAAx0CW0ZoLAACOUBhj1QRHASOSsdzb_M9BYpcw64JVQACXwQAAlo5eFR1_-1QkFryFSIE",
-      "CAACAgUAAx0CW0ZoLAACOUFhj1QWHs8AATBnUaqrL5zqywVSlzYAAiIEAALI1oFUKAR285aB2p0iBA",
-      "CAACAgUAAx0CW0ZoLAACOUJhj1Qd763XeQAB2kavmTzpJkgUJvsAAvkDAAIpgXlURpk2GwVlfDkiBA",
-)    
 
 buttons = [
     [
         InlineKeyboardButton(
-              text="😌ᴀᴅᴅ 𝒄𝒉𝒖𝒄𝒌𝒚 ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ🤖", url="t.me/chuckymusic_bot?startgroup=true"),
+            text="ᴀᴅᴅ ᴛɢɴ ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/TGN_Ro_bot?startgroup=true"),
     ],
     [
-        
+        InlineKeyboardButton(text="ꜱᴏᴜʀᴄᴇ 💫", url=f"https://github.com/ITZ-ZAID/TGN-Robot"),
         InlineKeyboardButton(
-                text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="ꜱᴜᴘᴘᴏʀᴛ ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/thanimaibots"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ☑️", url=f"https://t.me/The_Godfather_Network"),
         InlineKeyboardButton(
-            text="MY FRND🤡", url=f"https://t.me/FINAL_STRIKER_BOT"
+            text="ᴛɢɴ ᴄʜᴀᴛ", url=f"https://t.me/greatpersonxd"
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
 `ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..`
-ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/54412ffdffd6e09a17521.jpg)"""
+ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/cab6825dea9263d347831.jpg)"""
 
-START_IMG = "https://telegra.ph/file/0dc79c6b87d5e08999320.mp4"
+START_IMG = "https://telegra.ph/file/63d1ee18f81c92d11210e.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- LMAO NO NEED ."""
+ You can support the project [Lucifer](t.me/detctective_de) \
+ Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/Zaid_updates) \
+ Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -212,24 +213,18 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_sticker(
-                random.choice(STICKERS),
-                timeout=60,
-            )
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),                        
+                    escape_markdown(context.bot.first_name)),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code> 𝚌𝚑𝚞𝚌𝚔𝚢Here For You❤\n𝒏𝒂𝒏 𝒖𝒊𝒓 𝒐𝒅𝒂 𝒕𝒉𝒂𝒏 𝒆𝒓𝒖𝒌𝒂𝒏</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code>Zaid is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,
@@ -360,11 +355,11 @@ def help_button(update, context):
 
 
 @run_async
-def layla_about_callback(update, context):
+def zaid_about_callback(update, context):
     query = update.callback_query
-    if query.data == "layla_":
+    if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *TGN Robot*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I am [TGN Robot](t.me/TGN_Ro_bot), a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -372,22 +367,20 @@ def layla_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_TGN's licensed under the GNU General Public License v3.0_
-                 \n❍ TGN  @The_Godfather_Network
-                 \n❍ Support Group @Godfathersupport
                  \n❍ Assistant @TGN\_Assistant.
-                 \nHere is the [💾Repository](https://github.com).
+                 \nHere is the [💾Repository](https://github.com/Itsunknown-12/TGN-Robot).
                  \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="layla_back")
+                    InlineKeyboardButton(text="Back", callback_data="zaid_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "layla_back":
+    elif query.data == "zaid_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -402,8 +395,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Ꭺʟᴏɴᴇ ҡɪɴɢ*
-                 \nHere is the [Source Code](https://github.com) .""",
+            text=""" Hi..🤗 I am [Robot](t.me/TGN_Ro_Bot)
+                 \nHere is the [Source Code](https://github.com/Itsunknown-12/TGN-Robot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -650,7 +643,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1928904042 and DONATION_LINK:
+        if OWNER_ID != 412094015 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -698,10 +691,11 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Yes I am Back to online!](https://telegra.ph/file/9825bc2819bb7c78abe67.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!")
+                "Bot isnt able to send message to support_chat, go and check!"
+            )
         except BadRequest as e:
             LOGGER.warning(e.message)
 
@@ -714,7 +708,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(layla_about_callback, pattern=r"layla_")
+    about_callback_handler = CallbackQueryHandler(zaid_about_callback, pattern=r"zaid_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
@@ -743,7 +737,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("lmao check bot.")
+        LOGGER.info("Using long polling.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):

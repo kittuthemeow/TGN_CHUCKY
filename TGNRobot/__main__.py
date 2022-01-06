@@ -82,18 +82,18 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴛɢɴ ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/TGN_Ro_bot?startgroup=true"),
+            text="ᴀᴅᴅ CHUCKY ʀᴏʙᴏᴛ ᴛᴏ ᴜʀ ᴄʜᴀᴛ", url="t.me/chuckymusic_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ꜱᴏᴜʀᴄᴇ 💫", url=f"https://github.com/ITZ-ZAID/TGN-Robot"),
+        InlineKeyboardButton(text="DEVELOPER 💫", url=f"https://t.me/kittu_the_criminall"),
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ ⚡", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ☑️", url=f"https://t.me/The_Godfather_Network"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ☑️", url=f"https://t.me/chuckmusicupdate"),
         InlineKeyboardButton(
-            text="ᴛɢɴ ᴄʜᴀᴛ", url=f"https://t.me/greatpersonxd"
+            text="SCANNER", url=f"https://t.me/karma_appeal"
         ),
     ],
     [
@@ -110,7 +110,7 @@ START_IMG = "https://telegra.ph/file/63d1ee18f81c92d11210e.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [Lucifer](t.me/detctective_de) \
- Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/Zaid_updates) \
+ Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/kittu_the_criminall) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
